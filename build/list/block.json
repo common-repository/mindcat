@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mindcat/list",
+  "version": "2.1.1",
+  "title": "List of taxonomy terms",
+  "category": "text",
+  "attributes": {
+    "selectedCategories": {
+      "type": "array",
+      "default": []
+    },
+    "displayMode": {
+      "type": "string",
+      "default": "grid"
+    },
+    "imageChoice": {
+      "type": "string",
+      "default": "primary"
+    },
+    "imageSizeChoice": {
+      "type": "string",
+      "default": "thumbnail"
+    },
+    "useBGColor": {
+      "type": "boolean",
+      "default": false
+    },
+    "useTextColor": {
+      "type": "boolean",
+      "default": false
+    },
+    "className": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "icon": "category",
+  "description": "List of categories",
+  "supports": {
+    "html": false,
+    "align": true,
+    "inspector": true
+  },
+  "textdomain": "mindcat",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style-index.css",
+  "style": "file:./style-index.css"
+}

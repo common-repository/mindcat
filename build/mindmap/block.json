@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mindcat/mindmap",
+  "version": "2.1.1",
+  "title": "Mindmap of taxonomies",
+  "category": "widgets",
+  "icon": "screenoptions",
+  "description": "A mindmap of terms of a taxonomy",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "size": {
+      "type": "number",
+      "default": 50
+    },
+    "cat": {
+      "type": "string",
+      "default": ""
+    },
+    "count": {
+      "type": "number",
+      "default": 0
+    },
+    "hide_empty": {
+      "type": "number",
+      "default": 0
+    },
+    "max_level": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "textdomain": "mindcat",
+  "style": "file:./mindmap.css",
+  "script": "file:./mindmap.js",
+  "editorStyle": "file:./mindmap.css",
+  "editorScript": "file:./index.js"
+}
